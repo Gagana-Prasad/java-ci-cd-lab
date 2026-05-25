@@ -23,4 +23,4 @@ jobs:
         run: javac *.java
 
       - name: Run Test
-        run: java CalculatorTest
+        run: java calculatorTest
