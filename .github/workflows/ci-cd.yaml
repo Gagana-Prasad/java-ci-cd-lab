@@ -19,12 +19,8 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-       -  name: Compile Java Files
-           run: javac *.java    
-          
-      - name: Run Test
-        run: java calculatorTest
-      - name: Run Custom Action
-        uses: ./.github/actions/java-build  
- 
+      - name: Compile Java Files
+        run: javac *.java
 
+      - name: Run Test
+        run: java CalculatorTest
